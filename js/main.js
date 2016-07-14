@@ -13,13 +13,13 @@ define(function(require){
             var imgEle = $('<div class="item"><img src="'+ ele +'"></div>');
             $(".container").append(imgEle);
         });
-        $(".item img").on("load",function(){
+        setTimeout(function(){
             $(".container").rowGrid({
                 itemSelector: ".item",
                 minMargin: 5,
                 maxMargin: 15,
                 firstItemClass: "first-item"
             });
-        });
+        },1000);
     });
 });
