@@ -29,7 +29,6 @@ define(function(require){
                 rowElems = [],//用来存放当前行里面的图片元素
                 _items = items || $(container).find(options.itemSelector),//每一个图片的dom元素
                 itemsSize = _items.length;//图片个数
-
             /*移除所有图片元素的内联样式,和第一行与最后一行图片的class*/
             _items.each(function(idx,ele){
                 var $ele = $(ele);
